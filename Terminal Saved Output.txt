@@ -1,0 +1,611 @@
+Last login: Wed Sep  4 21:36:15 on ttys000
+mayank@mayanks-mbp-3 ~ % ls
+Applications
+BM1981_07 June 24_Class 2.xlsx
+Cloud Engineer
+Creative Cloud Files Personal Account mayank.parekh@gmail.com 78DAA2BC56D3BFA77F000101@AdobeID
+Desktop
+Documents
+Downloads
+Google Drive
+Library
+MacKeeper Backups
+Mayank CV.docx
+Mayank Summary.docx
+Movies
+Music
+My eBooks
+OneDrive
+Photos Videos
+Pictures
+Public
+README.md
+Sites
+The Future of Work_Agenda.png
+content-source-control-git
+dictionary.txt
+mayank@mayanks-mbp-3 ~ % cd "Cloud Engineer"
+mayank@mayanks-mbp-3 Cloud Engineer % ls
+1_Online CV Session_Sample CV 2.docx	VS Code
+BPNE Presentation.pdf			network.php.pdf
+Online CV Session - CV Template.docx
+mayank@mayanks-mbp-3 Cloud Engineer % git clone git@github.com:wang17112018su/csd02_final_project.git
+Cloning into 'csd02_final_project'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 36 (delta 6), reused 23 (delta 3), pack-reused 0 (from 0)
+Receiving objects: 100% (36/36), 43.62 KiB | 199.00 KiB/s, done.
+Resolving deltas: 100% (6/6), done.
+mayank@mayanks-mbp-3 Cloud Engineer % cd .\csd02_final_project\
+> 
+mayank@mayanks-mbp-3 Cloud Engineer % ls
+1_Online CV Session_Sample CV 2.docx
+BPNE Presentation.pdf
+Online CV Session - CV Template.docx
+VS Code
+csd02_final_project
+network.php.pdf
+mayank@mayanks-mbp-3 Cloud Engineer % cd csd02_final_project
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+zsh: command not found: pipenv
+mayank@mayanks-mbp-3 csd02_final_project % python --verion
+zsh: command not found: python
+mayank@mayanks-mbp-3 csd02_final_project % python --version
+zsh: command not found: python
+mayank@mayanks-mbp-3 csd02_final_project % code .
+zsh: command not found: code
+mayank@mayanks-mbp-3 csd02_final_project % flask run
+zsh: command not found: flask
+mayank@mayanks-mbp-3 csd02_final_project % ls -al
+total 64
+drwxr-xr-x  12 mayank  staff   384 Sep  6 10:20 .
+drwxr-xr-x   9 mayank  staff   288 Sep  6 10:20 ..
+drwxr-xr-x  12 mayank  staff   384 Sep  6 10:20 .git
+drwxr-xr-x   3 mayank  staff    96 Sep  6 10:20 .github
+-rw-r--r--   1 mayank  staff  3146 Sep  6 10:20 .gitignore
+-rw-r--r--   1 mayank  staff     8 Sep  6 10:20 .python-version
+-rw-r--r--   1 mayank  staff   151 Sep  6 10:20 Pipfile
+-rw-r--r--   1 mayank  staff  8455 Sep  6 10:20 Pipfile.lock
+-rw-r--r--   1 mayank  staff   218 Sep  6 10:20 index.py
+-rw-r--r--   1 mayank  staff   125 Sep  6 10:20 requirements.txt
+drwxr-xr-x   5 mayank  staff   160 Sep  6 10:20 static
+drwxr-xr-x   4 mayank  staff   128 Sep  6 10:20 templates
+mayank@mayanks-mbp-3 csd02_final_project % python3 --version
+Python 3.12.4
+mayank@mayanks-mbp-3 csd02_final_project % pipe3
+zsh: command not found: pipe3
+mayank@mayanks-mbp-3 csd02_final_project % pip3
+
+Usage:   
+  pip3 <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  inspect                     Inspect the python environment.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --debug                     Let unhandled exceptions propagate outside
+                              the main subroutine, instead of logging
+                              them to stderr.
+  --isolated                  Run pip in an isolated mode, ignoring
+                              environment variables and user
+                              configuration.
+  --require-virtualenv        Allow pip to only run in a virtual
+                              environment; exit with an error otherwise.
+  --python <python>           Run pip with the specified Python
+                              interpreter.
+  -v, --verbose               Give more output. Option is additive, and
+                              can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and
+                              can be used up to 3 times (corresponding
+                              to WARNING, ERROR, and CRITICAL logging
+                              levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --keyring-provider <keyring_provider>
+                              Enable the credential lookup via the
+                              keyring library if user input is allowed.
+                              Specify which mechanism to use [disabled,
+                              import, subprocess]. (default: disabled)
+  --proxy <proxy>             Specify a proxy in the form
+                              scheme://[user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection
+                              should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15
+                              seconds).
+  --exists-action <action>    Default action when a path already exists:
+                              (s)witch, (i)gnore, (w)ipe, (b)ackup,
+                              (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as
+                              trusted, even though it does not have
+                              valid or any HTTPS.
+  --cert <path>               Path to PEM-encoded CA certificate bundle.
+                              If provided, overrides the default. See
+                              'SSL Certificate Verification' in pip
+                              documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single
+                              file containing the private key and the
+                              certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine
+                              whether a new version of pip is available
+                              for download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming
+                              unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be
+                              backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will
+                              be removed in the future.
+mayank@mayanks-mbp-3 csd02_final_project % install pipenv
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+mayank@mayanks-mbp-3 csd02_final_project % pipevv shell
+zsh: command not found: pipevv
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+zsh: command not found: pipenv
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+zsh: command not found: pipenv
+mayank@mayanks-mbp-3 csd02_final_project % pip --version
+zsh: command not found: pip
+mayank@mayanks-mbp-3 csd02_final_project % pip3 --version
+pip 24.0 from /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pip (python 3.12)
+mayank@mayanks-mbp-3 csd02_final_project % pip3 install pipenv --user
+Collecting pipenv
+  Downloading pipenv-2024.0.1-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from pipenv) (2024.7.4)
+Collecting setuptools>=67 (from pipenv)
+  Downloading setuptools-74.1.2-py3-none-any.whl.metadata (6.7 kB)
+Collecting virtualenv>=20.24.2 (from pipenv)
+  Downloading virtualenv-20.26.3-py3-none-any.whl.metadata (4.5 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv>=20.24.2->pipenv)
+  Downloading distlib-0.3.8-py2.py3-none-any.whl.metadata (5.1 kB)
+Collecting filelock<4,>=3.12.2 (from virtualenv>=20.24.2->pipenv)
+  Downloading filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+Collecting platformdirs<5,>=3.9.1 (from virtualenv>=20.24.2->pipenv)
+  Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+Downloading pipenv-2024.0.1-py3-none-any.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 971.2 kB/s eta 0:00:00
+Downloading setuptools-74.1.2-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.1 MB/s eta 0:00:00
+Downloading virtualenv-20.26.3-py3-none-any.whl (5.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 986.3 kB/s eta 0:00:00
+Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 kB 1.3 MB/s eta 0:00:00
+Downloading filelock-3.15.4-py3-none-any.whl (16 kB)
+Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+Installing collected packages: distlib, setuptools, platformdirs, filelock, virtualenv, pipenv
+  WARNING: The script virtualenv is installed in '/Users/mayank/Library/Python/3.12/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts pipenv and pipenv-resolver are installed in '/Users/mayank/Library/Python/3.12/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed distlib-0.3.8 filelock-3.15.4 pipenv-2024.0.1 platformdirs-4.2.2 setuptools-74.1.2 virtualenv-20.26.3
+
+[notice] A new release of pip is available: 24.0 -> 24.2
+[notice] To update, run: python3.12 -m pip install --upgrade pip
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+zsh: command not found: pipenv
+mayank@mayanks-mbp-3 csd02_final_project % python3.12 -m pip install --upgrade pip
+Requirement already satisfied: pip in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Downloading pip-24.2-py3-none-any.whl.metadata (3.6 kB)
+Downloading pip-24.2-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 916.6 kB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+  WARNING: The scripts pip, pip3 and pip3.12 are installed in '/Library/Frameworks/Python.framework/Versions/3.12/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-24.2
+mayank@mayanks-mbp-3 csd02_final_project % pip --version
+zsh: command not found: pip
+mayank@mayanks-mbp-3 csd02_final_project % pip3 --version
+pip 24.2 from /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pip (python 3.12)
+mayank@mayanks-mbp-3 csd02_final_project % python -m site --user-base
+zsh: command not found: python
+mayank@mayanks-mbp-3 csd02_final_project % python3 -m site --user-base
+/Users/mayank/Library/Python/3.12
+mayank@mayanks-mbp-3 csd02_final_project % pipenv --version
+zsh: command not found: pipenv
+mayank@mayanks-mbp-3 csd02_final_project % install pipenv
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+zsh: command not found: pipenv
+mayank@mayanks-mbp-3 csd02_final_project % brew
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+mayank@mayanks-mbp-3 csd02_final_project % brew install pipenv 
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:bd12dc53d0714e477ce2ff4beaeb6ad71a9317271a63c3cd2f5d0427cf42f5c5
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.3.4_1.el_capitan.bottle.tar.gz
+==> Auto-updating Homebrew...
+Adjust how often this is run with HOMEBREW_AUTO_UPDATE_SECS or disable with
+HOMEBREW_NO_AUTO_UPDATE. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Homebrew collects anonymous analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics have been recorded yet (nor will be during this `brew` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+asm6809                    golangci-lint-langserver   pcaudiolib
+basedpyright               gql                        pgcopydb
+boost@1.85                 graphviz2drawio            pyupgrade
+cmrc                       grizzly                    safety
+crow                       http-server-rs             slackdump
+dependabot                 js-beautify                spidermonkey@115
+dra                        jsbeautifier               spoofdpi
+dwarfs                     kea                        stellar-cli
+fast_float                 kubernetes-cli@1.30        tevent
+fierce                     libblastrampoline          tmpmail
+firefly                    libmps                     ufbt
+flexiblas                  mariadb@11.4               wush
+gabo                       nuspell                    xroar
+gfxutil                    packcc
+go@1.22                    passt
+==> New Casks
+approf                                   gauntlet
+bbackupp                                 kindle-create
+blood-on-the-clocktower-online           labplot
+choice-financial-terminal                localcan
+cork                                     microsoft-openjdk@21
+crosspaste                               neo-network-utility
+flutterflow                              nrf-connect
+font-ibm-plex-math                       oxygen-xml-developer
+font-ibm-plex-sans-tc                    photostickies
+font-lxgw-simxihei                       retcon
+font-lxgw-simzhisong                     rize
+font-satoshi                             truetree
+font-scientifica                         winbox
+font-server-mono                         xmenu
+
+==> Downloading https://ghcr.io/v2/homebrew/core/pipenv/manifests/2024.0.1
+######################################################################### 100.0%
+==> Fetching dependencies for pipenv: ca-certificates, certifi, mpdecimal, openssl@3, readline, sqlite, xz and python@3.12
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+######################################################################### 100.0%
+==> Fetching ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:73
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/certifi/manifests/2024.8.30
+######################################################################### 100.0%
+==> Fetching certifi
+==> Downloading https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:b72c41cf69
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+######################################################################### 100.0%
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:377dc5e3
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.3.2
+######################################################################### 100.0%
+==> Fetching openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:39bc60aa
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+######################################################################### 100.0%
+==> Fetching readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:0cf2cae0b
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.46.1
+######################################################################### 100.0%
+==> Fetching sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:4bfe3c42a2b
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.6.2
+######################################################################### 100.0%
+==> Fetching xz
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:b940be1e4e0492a
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.12/manifests/3.12.5
+######################################################################### 100.0%
+==> Fetching python@3.12
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.12/blobs/sha256:9f9356
+######################################################################### 100.0%
+==> Fetching pipenv
+==> Downloading https://ghcr.io/v2/homebrew/core/pipenv/blobs/sha256:90e8a8965b6
+######################################################################### 100.0%
+==> Installing dependencies for pipenv: ca-certificates, certifi, mpdecimal, openssl@3, readline, sqlite, xz and python@3.12
+==> Installing pipenv dependency: ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/f1e786c502c23070efef1c7716aeaea181b28fd0cdbc5327d6d7c243b49e7700--ca-certificates-2024-07-02.bottle_manifest.json
+==> Pouring ca-certificates--2024-07-02.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /usr/local/Cellar/ca-certificates/2024-07-02: 4 files, 231.3KB
+==> Installing pipenv dependency: certifi
+==> Downloading https://ghcr.io/v2/homebrew/core/certifi/manifests/2024.8.30
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/47b207688319f2d252d26b1fdad04d4775db2234cc512f97238151a8e6849acf--certifi-2024.8.30.bottle_manifest.json
+==> Pouring certifi--2024.8.30.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/certifi/2024.8.30: 27 files, 26KB
+==> Installing pipenv dependency: mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json
+==> Pouring mpdecimal--4.0.0.sonoma.bottle.1.tar.gz
+🍺  /usr/local/Cellar/mpdecimal/4.0.0: 22 files, 615.8KB
+==> Installing pipenv dependency: openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.3.2
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/15a43beab5e5017b1a9fe7584ff44a48195632fd196c23ee0e5e7ecf67e9ef2a--openssl@3-3.3.2.bottle_manifest.json
+==> Pouring openssl@3--3.3.2.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/openssl@3/3.3.2: 6,984 files, 32.9MB
+==> Installing pipenv dependency: readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json
+==> Pouring readline--8.2.13.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/readline/8.2.13: 51 files, 1.6MB
+==> Installing pipenv dependency: sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.46.1
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/b34f1b968c8d3adc8763b7151754bc4f348c94372d89d1ae23cd11b643b7bdb2--sqlite-3.46.1.bottle_manifest.json
+==> Pouring sqlite--3.46.1.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/sqlite/3.46.1: 12 files, 4.7MB
+==> Installing pipenv dependency: xz
+==> Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.6.2
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/0f02a3a463ce4e72f92871751d9ba7b872ca8090348074d46ffb523fd67e1c7b--xz-5.6.2.bottle_manifest.json
+==> Pouring xz--5.6.2.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/xz/5.6.2: 96 files, 1.7MB
+==> Installing pipenv dependency: python@3.12
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.12/manifests/3.12.5
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/2cc40b4b76a48e24e9d83ccbaa744d74a15494224fdcd425d2fefeb9100357b8--python@3.12-3.12.5.bottle_manifest.json
+==> Pouring python@3.12--3.12.5.sonoma.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3
+Target /usr/local/bin/2to3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.12
+
+To list all files that would be deleted:
+  brew link --overwrite python@3.12 --dry-run
+
+Possible conflicting files are:
+/usr/local/bin/2to3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/2to3
+/usr/local/bin/2to3-3.12 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/2to3-3.12
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/idle3
+/usr/local/bin/idle3.12 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/idle3.12
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/pydoc3
+/usr/local/bin/pydoc3.12 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/pydoc3.12
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.12/bin/python3-config
+/usr/local/bin/python3.12 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+/usr/local/bin/python3.12-config -> /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12-config
+==> /usr/local/Cellar/python@3.12/3.12.5/bin/python3.12 -Im ensurepip
+==> /usr/local/Cellar/python@3.12/3.12.5/bin/python3.12 -Im pip install -v --no-
+==> Summary
+🍺  /usr/local/Cellar/python@3.12/3.12.5: 3,259 files, 61MB
+==> Installing pipenv
+==> Pouring pipenv--2024.0.1.sonoma.bottle.tar.gz
+==> Caveats
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/pipenv/2024.0.1: 1,300 files, 17.7MB
+==> Running `brew cleanup pipenv`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> pipenv
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+Warning: the environment variable LANG is not set!
+We recommend setting this in ~/.profile (or equivalent) for proper expected behavior.
+Warning: Python 3.10 was not found on your system...
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+You can specify specific versions of Python with:
+$ pipenv --python path/to/python
+mayank@mayanks-mbp-3 csd02_final_project % pipenv --python path/to/python 
+Warning: the environment variable LANG is not set!
+We recommend setting this in ~/.profile (or equivalent) for proper expected behavior.
+Warning: Python path/to/python was not found on your system...
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+You can specify specific versions of Python with:
+$ pipenv --python path/to/python
+mayank@mayanks-mbp-3 csd02_final_project % pipenv --python path/to/python3.10
+Warning: the environment variable LANG is not set!
+We recommend setting this in ~/.profile (or equivalent) for proper expected behavior.
+Warning: Python path/to/python3.10 was not found on your system...
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+You can specify specific versions of Python with:
+$ pipenv --python path/to/python
+mayank@mayanks-mbp-3 csd02_final_project % ~/.profile
+zsh: no such file or directory: /Users/mayank/.profile
+mayank@mayanks-mbp-3 csd02_final_project % brew install python 3.10
+Warning: No available formula with the name "3.10".
+==> Searching for similarly named formulae and casks...
+==> Formulae
+pypy3.10                   python-tk@3.10             python@3.10
+
+To install pypy3.10, run:
+  brew install pypy3.10
+mayank@mayanks-mbp-3 csd02_final_project % brew install python@3.10
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/manifests/3.10.14_1
+######################################################################### 100.0%
+==> Fetching dependencies for python@3.10: gdbm
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/manifests/1.24
+######################################################################### 100.0%
+==> Fetching gdbm
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/blobs/sha256:20b4d20aab87f
+######################################################################### 100.0%
+==> Fetching python@3.10
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/blobs/sha256:bcad91
+######################################################################### 100.0%
+==> Installing dependencies for python@3.10: gdbm
+==> Installing python@3.10 dependency: gdbm
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/manifests/1.24
+Already downloaded: /Users/mayank/Library/Caches/Homebrew/downloads/f9d3dc573240cb7eb6a7c9b42dd2e9591cc831662dedec947d70929e7868bccd--gdbm-1.24.bottle_manifest.json
+==> Pouring gdbm--1.24.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.24: 26 files, 857.4KB
+==> Installing python@3.10
+==> Pouring python@3.10--3.10.14_1.sonoma.bottle.tar.gz
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+
+==> /usr/local/Cellar/python@3.10/3.10.14_1/bin/python3.10 -Im ensurepip
+==> /usr/local/Cellar/python@3.10/3.10.14_1/bin/python3.10 -Im pip install -v --
+==> Caveats
+Python has been installed as
+  /usr/local/bin/python3.10
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.10`, `python3.10-config`, `pip3.10` etc., respectively, have been installed into
+  /usr/local/opt/python@3.10/libexec/bin
+
+You can install Python packages with
+  pip3.10 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.10/site-packages
+
+tkinter is no longer included with this formula, but it is available separately:
+  brew install python-tk@3.10
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python@3.10/3.10.14_1: 3,096 files, 53.6MB
+==> Running `brew cleanup python@3.10`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> python@3.10
+Python has been installed as
+  /usr/local/bin/python3.10
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.10`, `python3.10-config`, `pip3.10` etc., respectively, have been installed into
+  /usr/local/opt/python@3.10/libexec/bin
+
+You can install Python packages with
+  pip3.10 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.10/site-packages
+
+tkinter is no longer included with this formula, but it is available separately:
+  brew install python-tk@3.10
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+See: https://docs.brew.sh/Homebrew-and-Python
+mayank@mayanks-mbp-3 csd02_final_project % pipenv shell
+Warning: the environment variable LANG is not set!
+We recommend setting this in ~/.profile (or equivalent) for proper expected behavior.
+Creating a virtualenv for this project...
+Pipfile: /Users/mayank/Cloud Engineer/csd02_final_project/Pipfile
+Using /usr/local/bin/python3.10 (3.10.14) to create virtualenv...
+⠙ Creating virtual environment...created virtual environment CPython3.10.14.final.0-64 in 1492ms
+  creator CPython3macOsBrew(dest=/Users/mayank/.local/share/virtualenvs/csd02_final_project-jM6NI0ht, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/mayank/Library/Application Support/virtualenv)
+    added seed packages: pip==24.0, setuptools==69.5.1, wheel==0.43.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: /Users/mayank/.local/share/virtualenvs/csd02_final_project-jM6NI0ht
+Launching subshell in virtual environment...
+ . /Users/mayank/.local/share/virtualenvs/csd02_final_project-jM6NI0ht/bin/activate
+mayank@mayanks-mbp-3 csd02_final_project %  . /Users/mayank/.local/share/virtualenvs/csd02_final_project-jM6NI0ht/bin/activate
+(csd02_final_project) mayank@mayanks-mbp-3 csd02_final_project % pip install -r .\requirements.txt
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: '.requirements.txt'
+(csd02_final_project) mayank@mayanks-mbp-3 csd02_final_project % ls
+Pipfile			index.py		static
+Pipfile.lock		requirements.txt	templates
+(csd02_final_project) mayank@mayanks-mbp-3 csd02_final_project % pip install -r requirements.txt 
+Collecting blinker==1.8.2 (from -r requirements.txt (line 1))
+  Downloading blinker-1.8.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting click==8.1.7 (from -r requirements.txt (line 2))
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting colorama==0.4.6 (from -r requirements.txt (line 3))
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting Flask==3.0.3 (from -r requirements.txt (line 4))
+  Downloading flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting itsdangerous==2.2.0 (from -r requirements.txt (line 5))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting Jinja2==3.1.4 (from -r requirements.txt (line 6))
+  Downloading jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting MarkupSafe==2.1.5 (from -r requirements.txt (line 7))
+  Downloading MarkupSafe-2.1.5-cp310-cp310-macosx_10_9_x86_64.whl.metadata (3.0 kB)
+Collecting Werkzeug==3.0.4 (from -r requirements.txt (line 8))
+  Downloading werkzeug-3.0.4-py3-none-any.whl.metadata (3.7 kB)
+Downloading blinker-1.8.2-py3-none-any.whl (9.5 kB)
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 954.9 kB/s eta 0:00:00
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.7/101.7 kB 1.0 MB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.4-py3-none-any.whl (133 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.3/133.3 kB 848.2 kB/s eta 0:00:00
+Downloading MarkupSafe-2.1.5-cp310-cp310-macosx_10_9_x86_64.whl (14 kB)
+Downloading werkzeug-3.0.4-py3-none-any.whl (227 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 227.6/227.6 kB 966.1 kB/s eta 0:00:00
+Installing collected packages: MarkupSafe, itsdangerous, colorama, click, blinker, Werkzeug, Jinja2, Flask
+Successfully installed Flask-3.0.3 Jinja2-3.1.4 MarkupSafe-2.1.5 Werkzeug-3.0.4 blinker-1.8.2 click-8.1.7 colorama-0.4.6 itsdangerous-2.2.0
+(csd02_final_project) mayank@mayanks-mbp-3 csd02_final_project % export FLASK_APP=index.py
+(csd02_final_project) mayank@mayanks-mbp-3 csd02_final_project % flask run
+ * Serving Flask app 'index.py'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [06/Sep/2024 11:40:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2024 11:40:12] "GET /static/js/scripts.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2024 11:40:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Sep/2024 11:40:13] "GET /static/assets/favicon.ico HTTP/1.1" 200 -
+^C%                                                                                                                                (csd02_final_project) mayank@mayanks-mbp-3 csd02_final_project % 
